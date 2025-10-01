@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Break School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    .parallax-bg {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .parallax-bg::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+      background-size: 200% 200%;
+      animation: moveGradient 12s ease-in-out infinite;
+      z-index: 1;
+    }
+    @keyframes moveGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .parallax-content {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+<section class="relative min-h-screen flex items-center justify-center text-center px-6">
+  <div class="absolute inset-0 bg-cover bg-center brightness-50"
+       style="background-image: url('https://sun9-26.userapi.com/s/v1/if2/bTGdBXmPL50h0EgI72sEHlMVNFgoAS4I4q4QTNfceRsrjm2o3FEouU0HYoD3I7HXmmVdtu5cf9RSunDMuosYmlhC.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x107,240x160,360x240,480x320,540x360,640x427,720x480,1080x720,1280x854,1440x960,2200x1467&from=bu&cs=2200x0');"></div>
+
+  <div class="relative z-10 text-white flex flex-col items-center space-y-4">
+    <h1 class="text-5xl font-semibold mb-4 sm:text-4xl md:text-5xl">
+      Школа брейкинга
+    </h1>
+
+    <!-- Адаптивный логотип -->
+    <img src="https://i.postimg.cc/sx8zvs45/image.png" alt="Логотип"
+         class="w-40 sm:w-64 md:w-[420px] h-auto mb-4">
+
+    <p class="text-lg tracking-widest uppercase text-gray-300 mb-6 sm:text-base md:text-lg max-w-xl mx-auto leading-relaxed font-bold">
+      ORIGINAL PEOPLE - занятия брейкингом для детей и подростков в комфортных условиях и с надежными, профессиональными тренерами.
+    </p>
+
+    <a href="https://wa.clck.bar/79586207109?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%20%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%20%D1%80%D0%B5%D0%B1%D1%91%D0%BD%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D0%B1%D1%80%D0%B5%D0%B9%D0%BA-%D0%B4%D0%B0%D0%BD%D1%81%20%D0%B2%20%D0%B2%D0%B0%D1%88%20%D0%BA%D0%BB%D1%83%D0%B1%20Original%20People"
+       class="bg-red-600 hover:bg-red-800 text-white px-8 py-4 rounded-lg text-lg transition sm:px-6 sm:py-3">
+      Оставить заявку
+    </a>
+  </div>
+</section>
+
+
+
+
+   <!-- About Section -->
+<section class="bg-gray-800 py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-12 uppercase" data-aos="fade-up">
+    Почему выбирают нас
+  </h2>
+
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-left text-gray-300">
+    
+    <!-- 1 -->
+    <div class="flex items-start space-x-4 group" data-aos="fade-up" data-aos-delay="100">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="h-10 w-10 text-red-500 flex-shrink-0 transform transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:text-red-400 group-hover:drop-shadow-[0_0_15px_rgba(239,68,68,0.8)]" 
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v12l4-4m-4 4l-4-4" />
+      </svg>
+      <p class="text-lg">Опытные тренеры с чемпионскими титулами</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="flex items-start space-x-4 group" data-aos="fade-up" data-aos-delay="200">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="h-10 w-10 text-yellow-400 flex-shrink-0 transform transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:text-yellow-300 group-hover:drop-shadow-[0_0_15px_rgba(250,204,21,0.8)]" 
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <p class="text-lg">Сборная школы — Чемпионы России 2025</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="flex items-start space-x-4 group" data-aos="fade-up" data-aos-delay="300">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="h-10 w-10 text-green-400 flex-shrink-0 transform transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:text-green-300 group-hover:drop-shadow-[0_0_15px_rgba(34,197,94,0.8)]" 
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.485 0 4.779.755 6.879 2.046M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+      <p class="text-lg">Группы от 5 лет и старше</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="flex items-start space-x-4 group" data-aos="fade-up" data-aos-delay="400">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="h-10 w-10 text-blue-400 flex-shrink-0 transform transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:text-blue-300 group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.8)]" 
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.84M12 14l-6.16-3.422a12.083 12.083 0 00-.665 6.84M12 14v7" />
+      </svg>
+      <p class="text-lg">Обучение с нуля до профи</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Атмосфера в школе</h2>
+
+  <div class="relative max-w-6xl mx-auto">
+    <button id="prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg z-10 hover:bg-gray-700">❮</button>
+    <button id="next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg z-10 hover:bg-gray-700">❯</button>
+
+    <div id="carousel" class="overflow-hidden">
+      <div class="flex transition-transform duration-500" id="carousel-track">
+        <img src="https://i.postimg.cc/x1NF50jN/IMG-8949.avif" class="w-80 h-48 rounded-lg shadow-lg object-cover mx-2">
+        <img src="https://sun9-72.userapi.com/s/v1/if2/GN6-iuuzxmJUsYxxEENY18ga0SJKYXvyZ4PWRS-eG40odyMjdB4GfJtO0NdUBMvIijXM88zTHimicmdcufWah0h9.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x107,240x160,360x240,480x320,540x360,640x427,720x480,1080x720,1280x854,1440x960,2200x1467&from=bu&cs=2200x0" class="w-80 h-48 rounded-lg shadow-lg object-cover mx-2">
+        <img src="https://i.postimg.cc/0y575nFb/IMG-3341.avif" class="w-80 h-48 rounded-lg shadow-lg object-cover mx-2">
+        <img src="https://sun9-30.userapi.com/s/v1/if2/J3XcI1r1Vp4vAYmWICZeTmjaISqtG-aayt6wluuF42J9XFgv0qJLmhM8oiK8kY_zHAVPJta6nlbtRqvL-Z_yPxHB.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x107,240x160,360x240,480x320,540x360,640x427,720x480,1080x720,1280x854,1440x960,2200x1467&from=bu&cs=2200x0" class="w-80 h-48 rounded-lg shadow-lg object-cover mx-2">
+        <img src="https://i.postimg.cc/yd2TkRcd/IMG-3346.avif" class="w-80 h-48 rounded-lg shadow-lg object-cover mx-2">
+        <img src="https://sun9-68.userapi.com/s/v1/if2/QQnbw9CFJZkqamBzgDz82PfSYm-pN9pNTUGMMFt5pSrmgiczkGxHl03Oi04N2MCYv86MLOYtT8V63QAyFEGXua8m.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x107,240x160,360x240,480x320,540x360,640x427,720x480,1080x720,1280x854,1440x960,2200x1467&from=bu&cs=2200x0" class="w-80 h-48 rounded-lg shadow-lg object-cover mx-2">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const track = document.getElementById('carousel-track');
+  const slides = Array.from(track.children);
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const slideWidth = slides[0].offsetWidth + 16;
+  let index = 0;
+
+  slides.forEach(slide => {
+    const clone = slide.cloneNode(true);
+    track.appendChild(clone);
+  });
+
+  const totalSlides = track.children.length;
+
+  function moveCarousel() {
+    index++;
+    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.transform = `translateX(-${slideWidth * index}px)`;
+    if (index >= totalSlides / 2) {
+      setTimeout(() => {
+        track.style.transition = 'none';
+        index = 0;
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
+      }, 500);
+    }
+  }
+
+  function movePrevCarousel() {
+    if (index === 0) {
+      track.style.transition = 'none';
+      index = totalSlides / 2;
+      track.style.transform = `translateX(-${slideWidth * index}px)`;
+      setTimeout(movePrevCarousel, 20);
+      return;
+    }
+    index--;
+    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.transform = `translateX(-${slideWidth * index}px)`;
+  }
+
+  let autoplay = setInterval(moveCarousel, 3000);
+
+  nextBtn.addEventListener('click', () => { moveCarousel(); resetAutoplay(); });
+  prevBtn.addEventListener('click', () => { movePrevCarousel(); resetAutoplay(); });
+
+  function resetAutoplay() {
+    clearInterval(autoplay);
+    autoplay = setInterval(moveCarousel, 3000);
+  }
+</script>
+
+
+
+
+  <!-- Form / CTA Section -->
+  <section id="form" class="bg-gradient-to-r from-red-600 via-red-500 to-orange-500 py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">Готов присоединиться?</h2>
+    <p class="mb-8 text-lg text-white" data-aos="fade-up" data-aos-delay="200">
+      Оставь заявку, и мы свяжемся с тобой в течение дня.
+    </p>
+    <a href="https://wa.clck.bar/79586207109?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%20%F0%9F%91%8B%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%20%D1%80%D0%B5%D0%B1%D1%91%D0%BD%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D0%B1%D1%80%D0%B5%D0%B9%D0%BA-%D0%B4%D0%B0%D0%BD%D1%81%20%D0%B2%20%D0%B2%D0%B0%D1%88%20%D0%BA%D0%BB%D1%83%D0%B1%20Original%20People" target="_blank"
+       class="bg-white text-red-600 hover:bg-gray-200 px-8 py-4 rounded-lg text-lg font-semibold shadow-lg transition inline-block"
+       data-aos="zoom-in" data-aos-delay="400">
+      Перейти к заявке
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
+    © 2025 Школа брейкинга ORIGINAL PEOPLE.
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 100
+    });
+  </script>
+</body>
+</html>
